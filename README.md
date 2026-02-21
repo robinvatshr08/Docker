@@ -74,5 +74,19 @@ First remember:
       COPY . /usr/share/nginx/html
       EXPOSE 80
       CMD ["nginx", "-g", "daemon off;"]
+
+
+MYSQL Docker
+step 1: docker pull mysql
+step 2:  docker run -d -e MYSQL_ROOT_PASSWORD=root mysql
+
+## run mysql container in bash mode
+step3: docker exec -it ed78cca79e9c bash
+
+
+step4: bash-5.1# mysql -u root -p
+Enter password: 
+mysql> show databases;
+mysql> create database myDB;
       
               
