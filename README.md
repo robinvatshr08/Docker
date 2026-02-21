@@ -80,7 +80,7 @@ MYSQL Docker
 step 1: docker pull mysql
 step 2:  docker run -d -e MYSQL_ROOT_PASSWORD=root mysql
 
-## run mysql container in bash mode
+run mysql container in bash mode
 step3: docker exec -it ed78cca79e9c bash
 
 
