@@ -78,9 +78,9 @@ First remember:
 
 MYSQL Docker
 step 1: docker pull mysql
-step 2:  docker run -d -e MYSQL_ROOT_PASSWORD=root mysql
+step 2:  docker run -d -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=devops  --name=mysql --network=flask-app mysql
 
-run mysql container in bash mode
+## drun mysql container in bash mode
 step3: docker exec -it ed78cca79e9c bash
 
 
